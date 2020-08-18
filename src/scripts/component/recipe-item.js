@@ -9,6 +9,7 @@ class recipeItem extends HTMLElement {
             <article class="card">
                 <img src="${this._recipe.strMealThumb}">
                 <h3>${this._recipe.strMeal}</h3>
+                <div class="clear"></div>
             </article>
         `;
     }

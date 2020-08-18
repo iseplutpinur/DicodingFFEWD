@@ -7,6 +7,7 @@ function main() {
 	const searchInput = document.querySelector("#searchInput");
 	const recipeList = document.querySelector(".recipe-list");
     const recipeDetail = document.querySelector(".recipe-details");
+    let loading = null;
 
     const visibility = (show = 0) => {
         const views = ['.loading', '.recipe-list', '.recipe-details'];

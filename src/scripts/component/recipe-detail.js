@@ -19,7 +19,7 @@ class recipeDetail extends HTMLElement {
             }
         }
         this.innerHTML = `
-            <header><h2>${this._recipe.strMeal}</h2><button>Back</button></header>
+            <header><button>Back</button><h2>${this._recipe.strMeal}</h2></header>
             <div class="clear"></div>
             <section>
                 <figure>

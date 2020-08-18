@@ -5,6 +5,10 @@ body{
    background: #f0f0f0;
 }
 
+main{
+   padding: 5px;
+}
+
 nav{
    background-color: #333;
    position: sticky;
@@ -54,37 +58,15 @@ header{
    display: inline;
 }
 
-main {
-   padding: 10px;
-}
-
-@media screen and (max-width: 600px) {
-   .search-container {
-      float: left;
-      width: 90%;
-      display: flex;
-      margin: 7px;
-   }
-}
-
-@media screen and (max-width: 315px) {
-   .search-container {
-      float: none;
-      width: 100%;
-      display: block;
-      margin: 2px;
-   }
-   .search-container > input, .search-container > button{
-      width: 90%;
-      margin: 1px;
-   }
-}
-
-.recipe-list article{
+recipe-item{
    float: left;
    max-width: 200px;
-   margin: 10px;
+   margin: 5px;
    height: 300px;
+}
+
+.recipe-list{
+   width: 100%;
 }
 
 .recipe-list article img{
@@ -99,7 +81,36 @@ main {
 
 .recipe-list article:hover {
    cursor: pointer;
-   background-color: #fafafa;
+   background-color: #efefef;
+}
+
+
+@media screen and (max-width: 600px) {
+   .search-container {
+      float: left;
+      width: 90%;
+      display: flex;
+      margin: 7px;
+   }
+   recipe-item{
+      float: none;
+      width: 100%;
+      margin: 10px;
+      height: 100%;
+   }
+}
+
+@media screen and (max-width: 315px) {
+   .search-container {
+      float: none;
+      width: 100%;
+      display: block;
+      margin: 2px;
+   }
+   .search-container > input, .search-container > button{
+      width: 90%;
+      margin: 1px;
+   }
 }
 
 footer {
@@ -127,6 +138,8 @@ footer {
    clear: both;
 }
 
+
+
 recipe-detail table {
    text-align: left;
 }
@@ -147,7 +160,14 @@ recipe-detail img {
    float: left;
    margin: 0 30px;
 }
-
+@media screen and (max-width: 600px) {
+   recipe-detail img {
+      float: none;
+      display: block;
+      width: 100%;
+      margin:0;
+   }
+}
 recipe-detail header {
    display: block;
 }
