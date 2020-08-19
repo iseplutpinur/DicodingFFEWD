@@ -1,0 +1,70 @@
+nav{
+   background-color: #333;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+
+nav > h1 {
+   display: inline;
+   color: white;
+   float: left;
+   padding: 10px 10px;
+   margin: 0;
+}
+
+button, input {
+   border-radius: 3px;
+   font-size: 17px;
+   border: 1px solid grey;
+   padding: 5px;
+   display: inline;
+   background: #333;
+   color: white;
+}
+
+button:hover, input:hover {
+   background: #3f3f3f;
+}
+
+.search-container > input{
+   flex: 8;
+}
+
+.search-container > button{
+   flex: 2;
+   cursor: pointer;
+}
+
+.search-container {
+   float: right;
+   width: 50%;
+   display: flex;
+   margin: 7px;
+}
+
+header{
+   display: inline;
+}
+
+@media screen and (max-width: 600px) {
+   .search-container {
+      float: left;
+      width: 90%;
+      display: flex;
+      margin: 7px;
+   }
+}
+
+@media screen and (max-width: 315px) {
+   .search-container {
+      float: none;
+      width: 100%;
+      display: block;
+      margin: 2px;
+   }
+   .search-container > input, .search-container > button{
+      width: 90%;
+      margin: 1px;
+   }
+}

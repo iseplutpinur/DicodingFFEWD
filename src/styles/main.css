@@ -1,3 +1,8 @@
+@import 'nav.css';
+@import 'recipe-item.css';
+@import 'recipe-list.css';
+@import 'recipe-detail.css';
+
 body{
    font-family: 'Quicksand', sans-serif;
    margin: 0;
@@ -9,110 +14,6 @@ main{
    padding: 5px;
 }
 
-nav{
-   background-color: #333;
-   position: sticky;
-   top: 0;
-   z-index: 1;
-}
-
-nav > h1 {
-   display: inline;
-   color: white;
-   float: left;
-   padding: 10px 10px;
-   margin: 0;
-}
-
-button, input {
-   border-radius: 3px;
-   font-size: 17px;
-   border: 1px solid grey;
-   padding: 5px;
-   display: inline;
-   background: #333;
-   color: white;
-}
-
- button:hover, input:hover {
-   background: #3f3f3f;
-}
-
-.search-container > input{
-   flex: 8;
-}
-
-.search-container > button{
-   flex: 2;
-   cursor: pointer;
-}
-
-.search-container {
-   float: right;
-   width: 50%;
-   display: flex;
-   margin: 7px;
-}
-
-header{
-   display: inline;
-}
-
-recipe-item{
-   float: left;
-   max-width: 200px;
-   margin: 5px;
-   height: 300px;
-}
-
-.recipe-list{
-   width: 100%;
-}
-
-.recipe-list article img{
-   width: 100%;
-   object-fit: cover;
-   object-position: center;
-}
- 
-.recipe-list article h3 {
-   color: #333;
-}
-
-.recipe-list article:hover {
-   cursor: pointer;
-   background-color: #efefef;
-}
-
-
-@media screen and (max-width: 600px) {
-   .search-container {
-      float: left;
-      width: 90%;
-      display: flex;
-      margin: 7px;
-   }
-   recipe-item{
-      float: none;
-      width: 100%;
-      margin: 10px;
-      height: 100%;
-   }
-}
-
-@media screen and (max-width: 315px) {
-   .search-container {
-      float: none;
-      width: 100%;
-      display: block;
-      margin: 2px;
-   }
-   .search-container > input, .search-container > button{
-      width: 90%;
-      margin: 1px;
-   }
-}
-
 footer {
    padding: 20px;
    color: white;
@@ -120,10 +21,6 @@ footer {
    text-align: center;
    font-weight: bold;
    margin-top: 20px;
-}
-
-.profile header {
-   text-align: center;
 }
 
 .card{
@@ -138,12 +35,6 @@ footer {
    clear: both;
 }
 
-
-
-recipe-detail table {
-   text-align: left;
-}
-
 img {
    border-radius: 5px;
    box-shadow: rgba(0,0,0,0.15) 0px 1px 15px 2px;
@@ -154,59 +45,3 @@ img {
 .loading {
    text-align: center;
 }
-
-recipe-detail img {
-   max-width: 300px;
-   float: left;
-   margin: 0 30px;
-}
-@media screen and (max-width: 600px) {
-   recipe-detail img {
-      float: none;
-      display: block;
-      width: 100%;
-      margin:0;
-   }
-}
-recipe-detail header {
-   display: block;
-}
-
-recipe-detail h2 {
-   float: left;
-}
-
-recipe-detail button {
-   float: right;
-   cursor: pointer;
-   margin-top: 10px;
-}
-
-recipe-detail section{
-   margin-bottom: 30px;
-}
-
-recipe-detail table{
-   border-collapse: collapse;
-   margin-top: 10px;
-   margin-left: 30px;
-   background-color: #ffff;
-   width: 70%;
-   max-width: 700px;
-}
-
-recipe-detail table td, recipe-detail table th{
-  padding: 10px;
-  text-align: left;
-}
-
-recipe-detail table tr:nth-child(even){
-   background-color: #f0f0f0;
-}
-
-recipe-detail table th{
-   background-color: #f0f0f0;
-}
-
-
-

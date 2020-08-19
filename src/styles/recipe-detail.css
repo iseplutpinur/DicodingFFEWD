@@ -1,0 +1,65 @@
+recipe-detail table {
+   text-align: left;
+}
+
+
+recipe-detail img {
+   max-width: 300px;
+   float: left;
+   margin: 0 30px;
+}
+
+@media screen and (max-width: 600px) {
+   recipe-detail img {
+      float: none;
+      display: block;
+      width: 100%;
+      margin:0;
+   }
+}
+
+recipe-detail header {
+   display: block;
+}
+
+recipe-detail h2 {
+   float: left;
+}
+
+recipe-detail button {
+   float: right;
+   cursor: pointer;
+   margin-top: 10px;
+}
+
+recipe-detail section{
+   margin-bottom: 30px;
+}
+
+recipe-detail table{
+   border-collapse: collapse;
+   margin-top: 10px;
+   margin-left: 30px;
+   background-color: #ffff;
+   width: 70%;
+   max-width: 700px;
+}
+
+recipe-detail table td, recipe-detail table th{
+  padding: 10px;
+  text-align: left;
+}
+
+
+recipe-detail table tr:nth-child(even){
+   background-color: #f0f0f0;
+}
+
+recipe-detail table th{
+   background-color: #333;
+   color: #fff;
+}
+
+recipe-detail table tr:hover{
+   background-color: #bbb;
+}

@@ -1,0 +1,18 @@
+.recipe-list{
+   width: 100%;
+}
+
+.recipe-list article img{
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+ 
+.recipe-list article h3 {
+   color: #333;
+}
+
+.recipe-list article:hover {
+   cursor: pointer;
+   background-color: #efefef;
+}

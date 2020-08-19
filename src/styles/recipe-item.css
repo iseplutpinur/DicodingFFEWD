@@ -1,0 +1,16 @@
+recipe-item{
+   float: left;
+   max-width: 200px;
+   margin: 5px;
+   height: 300px;
+}
+
+
+@media screen and (max-width: 600px) {
+   recipe-item{
+      float: none;
+      width: 100%;
+      margin: 10px;
+      height: 100%;
+   }
+}
