@@ -7,10 +7,9 @@ function main() {
 	const searchInput = document.querySelector("#searchInput");
 	const recipeList = document.querySelector(".recipe-list");
     const recipeDetail = document.querySelector(".recipe-details");
-    let loading = null;
 
     const visibility = (show = 0) => {
-        const views = ['.loading', '.recipe-list', '.recipe-details'];
+        const views = ['.loading', '.recipe-list', '.recipe-details'];``
         for (let i = 0; i < views.length; i++) {
             if (i == show) document.querySelector(views[i]).removeAttribute("style");
             else document.querySelector(views[i]).setAttribute("style","display: none;");

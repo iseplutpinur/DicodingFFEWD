@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\IsepLutpiNur\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\IsepLutpiNur\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Java\jdk-13.0.1\bin;D:\Software\Utiliti and tools\Office2013 June2019 x64\Activator\KMS-VL-ALL-7.2RC2;C:\Users\Isep lutpi\AppData\Local\Programs\Python\Python38;C:\SysGCC\mingw64\bin;D:\Program Files\whois;C:\Program Files\swipl\bin;C:\Users\Isep lutpi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.2\bin;C:\adb;C:\Program Files\Sublime Text 3;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin; C;C:\Program Files\Git\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;C:\Users\IsepLutpiNur\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\IsepLutpiNur\AppData\Local\Yarn\bin;C:\Users\IsepLutpiNur\AppData\Local\Pandoc;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+
+npm manifest: 
+  {
+    "name": "go-recipe",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack --config webpack.prod.js",
+      "start-dev": "webpack-dev-server --config webpack.dev.js --open"
+    },
+    "author": "Isep Lutpi Nur",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.7.7",
+      "@babel/preset-env": "^7.7.7",
+      "babel-loader": "^8.0.6",
+      "css-loader": "^3.4.1",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.2.0",
+      "style-loader": "^1.1.3",
+      "webpack": "^4.41.5",
+      "webpack-cli": "^3.3.10",
+      "webpack-dev-server": "^3.10.1",
+      "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+      "regenerator-runtime": "^0.13.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
